@@ -1,0 +1,166 @@
+nav {
+    height: 75px;
+    background-color: #461143;
+}
+
+nav .symp_slate {
+    font-size: 36px;
+    margin-left: 100px;
+}
+
+nav .name {
+    color: white;
+    margin-right: 101px;
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ECECEC;
+}
+
+.main {
+    margin-left: 100px;
+    margin-top: 75px;
+    width: 1480px;
+    height: 774px;
+    background-color: white;
+}
+
+.arrow {
+    color: #000000;
+    font-family: IBM Plex Sans, Bold;
+    font-size: 50px;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+}
+
+.arrow :hover {
+    color: black;
+}
+
+.contents {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+img {
+    margin-top: 53px;
+    width: 680px;
+    height: 575px;
+    /* border: 3px solid black; */
+}
+
+.form {
+    padding-top: 31px;
+    width: 600px;
+    height: 674px;
+    background-color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.input {
+    width: 480px;
+    height: 39px;
+    border-color: white;
+    border-radius: 0px 20px;
+    border-top: white;
+    border-left: white;
+    padding-left: 22px;
+}
+
+.description_input {
+    height: 66px;
+}
+
+.element {
+    /* margin-bottom: 21px; */
+    margin-top: 20px;
+}
+
+.label {
+    margin-bottom: 5px;
+}
+
+.form_time {
+    margin-top: 29px;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
+.form_time_input {
+    width: 210px;
+    height: 39px;
+    border-radius: 0px 20px;
+    border-color: white;
+    border-top: white;
+    border-left: white;
+    padding-left: 22px;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 31px; */
+}
+
+.time_block {
+    margin-right: 40px;
+}
+
+.footer {
+    margin-top: 43px;
+    /* margin-bottom: 35px; */
+}
+
+.cancel_button {
+    display: flex;
+    justify-content: end;
+    /* margin-right: ; */
+}
+
+.cancel_button a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 21px;
+}
+
+button {
+    width: 132px;
+    height: 39px;
+    border-radius: 0px 20px;
+    background-color: #461143;
+    color: white;
+    border: none;
+    font-family: IBM Plex Sans, Medium;
+    font-size: 18px;
+}
+
+.delete_link {
+    color: #461143;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.symp_img {
+    height: 47px;
+    width: 239px;
+    margin-left: 100px;
+    padding-left: 0%;
+    margin-top: 14px;
+}

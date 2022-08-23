@@ -1,0 +1,86 @@
+.img {
+    width: 490px;
+    height: 441px;
+    margin-left: 202px;
+    margin-top: 114px;
+    margin-bottom: 18px;
+}
+
+.col1 {
+    width: 727px;
+}
+
+.col2 {
+    width: 626px;
+    margin-left: 127px;
+    /* margin-top: 81px; */
+
+}
+
+main {
+    display: flex;
+}
+
+.login {
+    width: 525px;
+    height: 351px;
+    margin-left: 202px;
+}
+
+.register {
+    /* margin-top: 75px; */
+    margin-right: 200px;
+    margin-left: 101px;
+    margin-bottom: 100px;
+}
+
+.heading {
+    font: IBM Plex Sans, Bold;
+    letter-spacing: 0px;
+    color: #461143;
+    opacity: 1;
+    margin-bottom: 35px;
+}
+
+.headingReg {
+    font: IBM Plex Sans, Bold;
+    letter-spacing: 0px;
+    color: #461143;
+    opacity: 1;
+    margin-bottom: 27px;
+}
+
+.input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 0px 20px;
+    opacity: 1;
+    margin-bottom: 31px;
+    height: 65px;
+}
+
+.button {
+    background-color: #461143;
+    border-radius: 0px 20px;
+    height: 65px;
+    font-family: IBM Plex Sans, SemiBold;
+    font-size: 25px;
+}
+
+.sympo_slate {
+    margin-top: 81px;
+    width: 626px;
+    height: 140px;
+    margin-left: 0px;
+    margin-bottom: 75px;
+    /* margin-top: 81px; */
+}
+
+
+.h1 {
+    margin-top: 81px;
+}
+
+.messages {
+    color: red;
+}

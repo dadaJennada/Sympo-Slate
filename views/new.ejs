@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="new.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar-dark sticky-top">
+        <div class="container-fluid d-flex justify-content-between align-item-center">
+            <img class="navbar-brand  symp_img" src="./imgs/Logo2.png">
+            <h5 class="mt-4 name">Hi <%=username%> | <span><a class='logout' href="/login">Logout</a></span></h5>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="row contents">
+            <div class="col">
+                <h3><span><a href='/home' class="arrow">&#8592;</a></span> Add Event</h3>
+                <div class="img_div">
+                    <img src="./imgs/AdobeStock_333205002-scaled.png">
+                </div>
+            </div>
+            <div class="col second">
+                <div class="form d-flex ">
+                    <form class="form_content" action='/new' method="post">
+                        <div class="part">
+                            <h2>Event Information</h2>
+
+                            <div class="element">
+                                <label class='label' for="name"><b>Event Name</b></label><br>
+                                <input class='input' type="text" id="name" name="name">
+                            </div>
+                            <div class="element">
+                                <label class='label' for="description"><b>Event Description</b></label><br>
+                                <input type="text" class='input  description_input' id="description" name="description">
+                            </div>
+                            <div class="element">
+                                <label class='label' for="image"><b>Event URL</b></label><br>
+                                <input type="text" class='input' id="url" name="image">
+                            </div>
+                            <div class="element">
+                                <label class='label' for="word_date"><b>Event Date</b></label><br>
+                                <input type="date" class='input' id="date" placeholder="dd/mm/yyyy" name="word_date">
+                            </div>
+                        </div>
+                        <div class="d-flex form_time">
+                            <div class="time_block">
+                                <label class="label" for="start_time"><b>Start Time</b></label><br>
+                                <input type="time" class="form_time_input" id="start_time" placeholder="--:-- --"
+                                    name="start_time">
+                                <!-- <a href="">Cancel</a> -->
+                            </div>
+                            <div class="time_block">
+                                <label class="label" for="end_time"><b>End Time</b></label><br>
+                                <input type="time" class="form_time_input" id='end_time' name="end_time">
+                                <!-- <button>ADD EVENT</button> -->
+                            </div>
+                        </div>
+                        <div class="row d-flex footer">
+                            <div class="col-6 justify-content-end align-content-end cancel_button">
+                                <div>
+                                    <a href="/home"><b>Cancel</b></a>
+                                </div>
+                            </div>
+                            <%=message%>
+                                <div class="col-6">
+                                    <button>ADD EVENT</button>
+                                </div>
+
+                        </div>
+                        <!-- <a class='delete_link' href="">Delete this event</a> -->
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
