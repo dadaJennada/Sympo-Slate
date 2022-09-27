@@ -6,13 +6,13 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="/studHomeItems.css">
     <script>
-        function changeButton(id) {
-
+        function changeButton(name, id) {
             const button = document.querySelector('#' + id);
+            console.log(id);
             button.classList.add('changedButton');
             button.ariaDisabled = true;
             console.log('Hello World');
-            window.location.href = '/studcalender/' + id;
+            window.location.href = '/studcalender/' + name;
         }
     </script>
     <link type="text/css" href="/src/css/studHomeItems.css" rel="stylesheet">
@@ -67,23 +67,22 @@
                             </h4>
 
 
-                            <button type='button' id=<%=event.name%>
-                                onclick='changeButton(this.id)'
-                                <%for(let stevent of studEvents){%>
-                                    <%if(stevent.name===event.name){%>
-                                        style='color:black'class='changedButton' disabled
-                                        <%check=1%>
-                                            <%break%>
-                                                <%}%>
-
+                            <button type='button' id=<%=event.name%> onclick="changeButton('<%=event.name%>',this.id)"
+                                    <%for(let stevent of studEvents){%>
+                                        <%if(stevent.name===event.name){%>
+                                            style='color:black'class='changedButton' disabled
+                                            <%check=1%>
+                                                <%break%>
                                                     <%}%>
-                                                        <%if(check==1){%>
-                                                            >SCHEDULED
 
-                                                            <%}%>
-                                                                <%if(check==0){%>
-                                                                    class='button'>Add to calender
-                                                                    <%}%>
+                                                        <%}%>
+                                                            <%if(check==1){%>
+                                                                >SCHEDULED
+
+                                                                <%}%>
+                                                                    <%if(check==0){%>
+                                                                        class='button'>Add to calender
+                                                                        <%}%>
 
 
                             </button>
@@ -103,7 +102,7 @@
                     <%if(event.end_date<timenow){%>
                         <div class="event cards">
                             <div class="card_img_class">
-                                <img src=<%=event.image%> class="card_img" alt="...">
+                                <img src="<%=event.image%>" class="card_img" alt="...">
                             </div>
                             <div class="">
                                 <div class="">

@@ -6,8 +6,8 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="/mycalenderItems.css">
     <script>
-        function removeItem(name) {
-            const card = document.querySelectorAll('.' + name);
+        function removeItem(name, id) {
+            const card = document.querySelectorAll('.' + id);
             console.log(card);
             // card.remove()
             document.location.href = '/stud/remitem/' + name;
@@ -62,8 +62,9 @@
                             <%=event.start_time%>-<%=event.end_time%>
                         </h4>
 
-                        <button id=<%=event.name%> onclick='removeItem(this.id)' class="button">Remove From
-                            Calender</button>
+                        <button id=<%=event.name%> onclick='removeItem("<%=event.name%>",this.id)' class="button">Remove
+                                From
+                                Calender</button>
 
                     </div>
                 </div>

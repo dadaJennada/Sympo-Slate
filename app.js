@@ -257,10 +257,12 @@ app.get('/studcalender/:name', async (req, res) => {
         res.redirect('/login')
     }
     const { name } = req.params;
+    console.log(name);
     const event = await Event.findOne({ name });
-    // console.log(event);
-    const student = await Student.findOne({ username: req.session.name });
-    // console.log(student);
+    console.log(event);
+    console.log(req.session.name);
+    const student = await Student.findOne({ username: req.session.name }).populate('events');
+    console.log(student);
     student.events.push(event);
     await student.save();
     //  console.log(student);
@@ -273,7 +275,7 @@ app.get('/stud/remitem/:name', async (req, res) => {
     }
     const { name } = req.params;
     const username = req.session.name;
-    // console.log(username);
+    console.log(username, name);
     const student = await Student.findOne({ username }).populate('events');
     const sevents = student.events;
     let i = 0;
